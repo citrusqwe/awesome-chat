@@ -1,0 +1,28 @@
+<div class="menu">
+  <div class="menu__user">
+    <tui-avatar
+        text="test test"
+        class="tui-space_top-1"
+        [autoColor]="true"
+    ></tui-avatar>
+    <span class="user-name">Test Test</span>
+  </div>
+  <div class="menu__chats">
+    <button
+        (click)="chatsExpanded = !chatsExpanded"
+        class="menu-chats__toggle"
+    >
+      <tui-svg class="menu-chats__toggle-icon" [class.rotate]="chatsExpanded" [src]="'tuiIconChevronRight'"></tui-svg>
+      Folders
+    </button>
+    <tui-expand [expanded]="chatsExpanded">
+      <ng-template tuiExpandContent>
+        <ul class="menu-folders">
+          <li class="menu-folders__item active">
+            All Chats
+          </li>
+        </ul>
+      </ng-template>
+    </tui-expand>
+  </div>
+</div>

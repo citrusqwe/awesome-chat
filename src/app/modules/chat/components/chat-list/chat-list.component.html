@@ -1,0 +1,25 @@
+<div class="chat-list">
+  <div class="chat-list__header">
+    <tui-input
+              tuiTextfieldSize="s"
+               tuiHintContent="A tooltip"
+               [(ngModel)]="search"
+               class="chat-list__input">
+      <span class="chat-list__input-text"><tui-svg [src]="'tuiIconSearch'"></tui-svg> Search</span>
+    </tui-input>
+  </div>
+  <ul class="chat-list__list list">
+    <li class="list__item">
+      <app-chat-item [active]="true"></app-chat-item>
+    </li>
+    <li class="list__item">
+      <app-chat-item></app-chat-item>
+    </li>
+    <li class="list__item">
+      <app-chat-item></app-chat-item>
+    </li>
+    <li class="list__item">
+      <app-chat-item></app-chat-item>
+    </li>
+  </ul>
+</div>

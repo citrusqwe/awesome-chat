@@ -1,0 +1,28 @@
+.chat-item {
+  display: flex;
+  gap: var(--indent-md);
+  padding: var(--indent-sm);
+  border-radius: 5px;
+
+  &.active {
+    background: var(--light-gray);
+  }
+
+  &__name {
+    font-size: var(--font-md);
+    margin-bottom: var(--indent-xs);
+  }
+
+  &__text {
+    color: var(--light-gray-md);
+  }
+
+  &__info {
+    margin-left: auto;
+    text-align: center;
+  }
+
+  &__time {
+    margin-bottom: var(--indent-xs);
+  }
+}
